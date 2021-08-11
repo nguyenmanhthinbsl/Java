@@ -1,0 +1,16 @@
+1.Khái Niệm
+        - Kế thừa trong java là sự liên quan giữa hai class với nhau, trong đó có class cha (superclass) và class con (subclass).
+        - Khi kế thừa class con được hưởng tất cả các phương thức và thuộc tính của class cha.
+        - Tuy nhiên, nó chỉ được truy cập các thành viên public và protected của class cha.
+        - Nó không được phép truy cập đến thành viên private của class cha.
+2. Các loại :
+    - Có 3 kiểu kế thừa trong java.
+           + Đơn kế thừa
+           + kế thừa nhiều cấp
+           + kế thừa thứ bậc
+    - Chú ý: Đa kế thừa trong java KHÔNG được support thông qua class.(  Trong java, đa kế thừa chỉ được support thông qua interface - Xem bài interface)
+    - Câu hỏi: Tại sao đa kế thừa không được support trong java?
+       + Để giảm thiểu sự phức tạp và đơn giản hóa ngôn ngữ, đa kế thừa không được support trong java.
+       + Hãy suy xét kịch bản sau: Có 3 lớp A, B, C. Trong đó lớp C kế thừa từ các lớp A và B. Nếu các lớp A và B có phương thức giống nhau và bạn gọi nó từ đối tượng của lớp con,
+            như vậy khó có thể xác đinh được việc gọi phương thức của lớp A hay B.
+       + Vì vậy lỗi khi biên dịch sẽ tốt hơn lỗi khi runtime, java sẽ print ra lỗi "compile time error" nếu bạn cố tình kế thừa 2 class.

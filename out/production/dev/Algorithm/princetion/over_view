@@ -1,0 +1,15 @@
+all :
+    - introduction
+    - stack
+    - queue
+    - sort : merge, heap, radix
+    - đồ thị, tìm kiếm cổ điển, cây spanning tối thiểu, đường đi ngắn nhất.
+    - sử lý chuỗi
+    - nén dữ liệu
+week 2 :
+    - UNION-FIND : QUICK-FIND, QUICK-UNION
+        + dynamic connectivity
+        + quick find
+        + quick union
+        + improvement
+        + application

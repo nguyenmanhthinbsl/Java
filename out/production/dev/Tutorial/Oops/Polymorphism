@@ -1,0 +1,11 @@
+Tính đa hình :
+     1.Khái niệm : thực hiện một hành động bằng nhiều cách khác nhau
+     2.Phân loại : Có hai kiểu của đa hình trong java :
+        - đa hình lúc biên dịch (compile)
+            + Ví dụ :  nạp chồng phương thức static trong java
+        - đa hình lúc thực thi (runtime) :
+            + Khái niệm :   là quá trình gọi phương thức đã được ghi đè trong thời gian thực thi chương trình.
+                            Trong quá trình này, một phương thức được ghi đè được gọi thông qua biến tham chiếu của một lớp cha.
+                    . Upcasting : Khi biến tham chiếu của lớp cha tham chiếu tới đối tượng của lớp con
+     3. Cách thức :
+      - thực hiện đa hình trong java bằng cách nạp chồng phương thức và ghi đè phương thức.

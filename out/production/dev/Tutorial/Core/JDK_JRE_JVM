@@ -1,0 +1,26 @@
+1. JDK
+2. JRE
+3. JVM
+
+=======================================================================================================================
+1. JDK - Java Development Kit
+    Bao gồm - JRE + Development tools
+2. JRE - Java Runtimes Environment
+    -Mục đích : Cung cấp môi trường Runtimes. Là trình triển khai của JVM gồm :
+        + Tập hợp các thư viện 
+3. JVM - Java Virtual Machine
+    - Khái niệm : Là thiết bị ảo cung cấp môi trường để chạy code Java. CUng cấp môi trường runtime để thực thi Bytecode.
+    - Nhiệm vụ  :
+        + Tải Code
+        + Kiểm tra code
+        + Thực thi Code
+        + Cung cấp môi trường  Runtimes
+    - Cấu trúc :
+        + ClassLoader :  là hệ thống con của JVM sử dụng để tải Class
+        + Class (method ) Area : Lưu trữ cấu trúc mỗi lớp( hằng, trường, phương thức, code phương thức, dữ liệu phương thức...)
+        + Heap : Khu vực dữ liệu Runtimes
+        + Stack : Khu vực lưu giữ các Frame. Mỗi Thread có Stack riêng được khởi tạo cùng thời điểm với thread
+        + thanh ghi PC : Chứa địa chỉ của lệnh JVM đang thực thi
+        + Native method stack : Bao gồm tất cả các phương thức tự nhiên đc sử dụng trong ứng dụng
+        + Executive Engine : Bao gồm ( 1 bộ Virtual Process + 1 bộ thông dịch Interpreter) _ Mục đích đọc Bytecode Stream sau đó thực hiện các chỉ thị
+        + JIT - Just In Time Compiler : Được dùng để cải thiện hiệu suất chương trình Java bằng cách biên dịch Bytecode cùng tính năng tại cùng 1 thời điểm.

@@ -1,0 +1,69 @@
+1. Kiểu dữ liệu
+2. Biến
+3. Ép kiểu
+4. StringBuilder
+
+=============================================================================================================================================================================
+1. Có 2 kiểu dữ liệu trong java:
+    -   Kiểu dữ liệu nguyên thủy (primitive)
+        +) byte	    Dùng để lưu dữ liệu kiểu số nguyên có kích thước một byte (8 bít). Phạm vi biểu diễn giá trị từ -128 đến 127. Giá trị mặc định là 0.
+        +) char	    Dùng để lưu dữ liệu kiểu kí tự hoặc số nguyên không âm có kích thước 2 byte (16 bít). Phạm vi biểu diễn giá trị từ 0 đến u\ffff. Giá trị mặc định là 0.
+        +) boolean	Dùng để lưu dữ liệu chỉ có hai trạng thái đúng hoặc sai (độ lớn chỉ có 1 bít). Phạm vi biểu diễn giá trị là {“True”, “False”}. Giá trị mặc định là False.
+        +) short	Dùng để lưu dữ liệu có kiểu số nguyên, kích cỡ 2 byte (16 bít). Phạm vi biểu diễn giá trị từ - 32768 đến 32767. Giá trị mặc định là 0.
+        +) int	    Dùng để lưu dữ liệu có kiểu số nguyên, kích cỡ 4 byte (32 bít). Phạm vi biểu diễn giá trị từ -2,147,483,648 đến 2,147,483,647. Giá trị mặc định là 0.
+        +) long 	Dùng để lưu dữ liệu có kiểu số nguyên có kích thước lên đến 8 byte. Giá trị mặc định là 0L.
+        +) float	Dùng để lưu dữ liệu có kiểu số thực, kích cỡ 4 byte (32 bít). Giá trị mặc định là 0.0F.
+        +) double	Dùng để lưu dữ liệu có kiểu số thực có kích thước lên đến 8 byte. Giá trị mặc định là 0.00D
+    -   Kiểu dữ liệu đối tượng (oops)
+        +)Array 	Một mảng của các dữ liệu cùng kiểu.
+        +)class	    Dữ liệu kiểu lớp đối tượng do người dùng định nghĩa. Chứa tập các thuộc tính và phương thức..
+        +)interface	Dữ liệu kiểu lớp giao tiếp do người dùng định nghĩa. Chứa các phương thức của giao tiếp.
+2. Biến :
+    -   Biến cục bộ ( Local)
+        +) Biến cục bộ được khai báo trong các phương thức, hàm contructor hoặc trong các block và sẽ bị phá hủy khi kết thúc các phương thức, contructor và block.
+        +) KHÔNG ĐƯỢC SỬ DỤNG “access modifier” khi khai báo biến cục bộ.
+        +) Các biến cục bộ sẽ nằm trên vùng bộ nhớ STACK của bộ nhớ.
+        +) PHẢI CẦN KHỞI TẠO GIÁ TRỊ TRƯỚC KHI SỬ DỤNG
+    -   Biến toàn cục ( instance )
+        +) Biến instance được khai báo trong một lớp(class), bên ngoài các phương thức, constructor và các block.
+        +) Biến instance được lưu trong bộ nhớ HEAP.
+        +) Biến instance được TẠO khi một đối tượng được tạo bằng việc sử dụng từ khóa “NEW” và sẽ bị phá HỦY khi đối tượng bị phá hủy.
+        +) Biến instance có thể được sử dụng bởi các phương thức, constructor, block, ... Nhưng nó phải được sử dụng thông qua một đối tượng cụ thể.
+        +) Bạn được phép sử dụng "access modifier" khi khai báo biến instance, mặc định là "default".
+        +) Biến instance có giá trị mặc định phụ thuộc vào kiểu dữ liệu của nó. Ví dụ nếu là kiểu int, short, byte thì giá trị mặc định là 0, kiểu double thì là 0.0d, ... Vì vậy, bạn sẽ không cần khởi tạo giá trị cho biến instance trước khi sử dụng.
+        +) Bên trong class mà bạn khai báo biến instance, bạn có thể gọi nó trực tiếp bằng tên khi sử dụng ở khắp nới bên trong class đó.
+    -   Biến tĩnh ( Static)
+        +) Biến static được khai báo trong một class với từ khóa "static", phía bên ngoài các phương thức, constructor và block.
+        +) Sẽ chỉ có DUY NHẤT MỘT bản sao của các biến static được tạo ra, dù bạn tạo bao nhiêu đối tượng từ lớp tương ứng.
+        +) Biến static được LƯU TRỮ TRONG BỘ NHỚ STATIC RIÊNG.
+        +) Biến static được TẠO khi chương trình bắt đầu chạy và chỉ bị phá hủy khi chương trình DỪNG.
+        +) Giá trị mặc định của biến static phụ thuộc vào kiểu dữ liệu bạn khai báo tương tự biến instance.
+        +) Biến static được truy cập thông qua tên của class chứa nó, với cú pháp: TenClass.tenBien.
+        +) Trong class, các phương thức sử dụng biến static bằng cách gọi tên của nó khi phương thức đó cũng được khai báo với từ khóa "static".
+3. Ép Kiểu Dữ liệu :
+    Byte > Short > Integer >Long >Float >Double
+    - 2 Cách ép kiểu :
+        + Nới rộng (Windening) : từ kiểu có kích thước nhỏ sang kiểu lớn hơn
+        + Thu hẹp (Narrowwing)
+    - Cú pháp : int a = 100 -> Long 100 <=> (long) a;
+    - String to Date :
+        - ví dụ :
+                String sDate1 = "12/7/2017";
+                String sDate2 = "12-07-2017";
+                String sDate3 = "12/7/2017 13:30:50";
+                String sDate4 = "12-07-2017 13:30:50";
+                SimpleDateFormat formatter1 = new SimpleDateFormat("dd/MM/yyyy");
+                SimpleDateFormat formatter2 = new SimpleDateFormat("dd-MM-yyyy");
+                SimpleDateFormat formatter3 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                SimpleDateFormat formatter4 = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+                Date date1 = formatter1.parse(sDate1);
+                Date date2 = formatter2.parse(sDate2);
+                Date date3 = formatter3.parse(sDate3);
+                Date date4 = formatter4.parse(sDate4);
+4. StringBuilder
+    4.1 StringBuilder()
+        Tạo một đối tượng String lưu trữ 16 ký tự
+    4.2 StringBuilder(int capacity)
+        Tạo đối tượng String lưu trữ capacity ký tự
+    4.3 StringBuilder(String temp)
+        Tạo đối tượng String lấy thông tin từ chuỗi temp

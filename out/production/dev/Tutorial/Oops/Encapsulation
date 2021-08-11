@@ -1,0 +1,4 @@
+Tính đóng gói :
+    - Tính đóng gói trong java là kỹ thuật ẩn giấu thông tin không liên quan và hiện thị ra thông liên quan.
+    - bảo vệ trạng thái bên trong của một đối tượng,giảm số lượng khớp nối có thể có trong một ứng dụng.
+    - read-only hoặc write-only bằng việc cài đặt phương thức setter hoặc getter.

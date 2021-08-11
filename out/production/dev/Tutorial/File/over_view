@@ -1,0 +1,27 @@
+1. file
+2. Các thao tác cơ bản
+3. Các dạng thao tác IO Stream
+=======================================================================================================================
+1.
+  - 2 loại file cơ bản :
+    + file nhị phân
+    + file văn bản ( text)
+  - Các loại bảng mã :
+    +  ASCII : 1 byte biểu diễn 1 ký tự - chỉ thích hợp cho nn không có hoặc ít dấu.
+      Vì vậy => ra đời các bảng mã khác, kế đến như Unicode( UTF-8, 16,32) tương thức với ASCII
+    + UTF-8 : 1-4 byte biểu diễn 1 ký tự
+2. Các thao tác cơ bản với file:
+    - thư viện sử dụng : java.io.File
+3.Các dạng thao tác IO Stream
+    - Thao tác mức thấp
+        + Thao tác trực tiếp với file
+        + Đơn vị dữ liệu thao tác : BYTE
+        + 1 Số lớp thao tác :
+            . FileInputStream / FileOutputStream
+            . FileReader / FileWriter
+            CHÚ Ý : Đơn vị thao tác là Byte nên ta phải xác định số lượng byte đọc/ghi truyền cho phù hợp.
+    - Thao tác mức cao
+        + Thao tác kh tác động trực tiếp tới file
+        + 1 Số lớp thao tác :
+            . DataInputStream / DataOutputStream
+            . BufferReader / BufferWriter / PrintWriter : Kết hợp BufferWriter/BufferReader và PrintWriter để đọc ghi dữ liệu theo line

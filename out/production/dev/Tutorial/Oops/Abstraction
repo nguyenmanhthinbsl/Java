@@ -1,0 +1,8 @@
+Tính trừu tượng trong java :
+    - Tính trừu tượng là một tiến trình ẩn các cài đặt chi tiết và chỉ hiển thị tính năng tới người dùng.
+    - Nói cách khác, nó chỉ hiển thị các thứ quan trọng tới người dùng và ẩn các chi tiết nội tại, ví dụ: để gửi tin nhắn, người dùng chỉ cần soạn text và gửi tin.
+        Bạn không biết tiến trình xử lý nội tại về phân phối tin nhắn.
+    - Tính trừu tượng giúp bạn trọng tâm hơn vào đối tượng thay vì quan tâm đến cách nó thực hiện.
+* Có 2 cách để đạt được sự trừu tượng hóa trong java
+    - Sử dụng lớp abstract
+    - Sử dụng interface

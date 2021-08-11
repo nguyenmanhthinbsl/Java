@@ -1,0 +1,8 @@
+- Nếu khi nào bạn có nhu cầu dùng mảng 2 chiều (hay còn được gọi là array chứa array) thì có thể nghĩ đến mảng 1 chiều là đủ.
+        - Ví dụ: Gọi arr là mảng 2 chiều với 10 hàng 10 cột, i và j là index lần lượt ở hàng và cột (Row & Column). Từ đó truy xuất mảng sẽ có dạng arr[i][j].
+- Để tối ưu hơn: chúng ta chỉ cần 1 array có 10*10 = 100 phần tử là được. Khi đó vị trí ở (i,j) sẽ là 1 index duy nhất được tính như sau:
+    index = (i*10) + j
+- 100 phần tử đặt liền kề nhau đương nhiên lý tưởng hơn nhiều!!
+- Lưu ý: một số ngôn ngữ sẽ cấp phát 10 array riêng lẻ (rời rạc, không liên tục trong dãy memory). Đây là lý do chúng ta cần vận dụng cách này
+    (Việc sử dụng mảng 1 chiều giúp ta tạo ra 1 vùng nhớ lưu mảng liên tục trên bộ nhớ,nếu dùng mảng 2 chiều có thể mỗi index sẽ là 1 mảng tại những vị trí bộ nhớ cách biệt nhau)
+- Một ứng dụng hay thấy nhất là dữ liệu hình ảnh không bao giờ có [][]byte mà chỉ cần []byte thôi. Hoặc nếu các bạn làm game cờ caro, cờ tướng, cờ vua thì bàn cờ cũng có thể dùng mảng 1 chiều cũng được.

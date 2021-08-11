@@ -1,0 +1,36 @@
+1.Khái niệm
+2.Tính năng
+3.Thiết lập Path( biến môi trường)
+
+
+1. Java là một một ngôn ngữ lập trình hiện đại, bậc cao, hướng đối tượng, bảo mật và mạnh mẽ. và là một Platform(môi trường runtime riêng cho mình (JRE) và API)
+    Có 4 Platform của Java :
+        - Java Standard Edition : JAVA SE(bao gồm các chủ đề cốt lõi : OOPs, String, Regex, Exception, Inner classes, Multithreading, I/O Stream, Networking, AWT, Swing, Reflection, Collection,...)
+        - Java Enterprise Edition : JAVA EE(sử dụng để phát triển các ứng dụng web và doanh nghiệp :Servlet, JSP, Web Services, EJB, JPA , v.v.)
+        - Java Micro Edition : JAVA ME( nền tảng vi mô chủ yếu sử dụng để phát triển các nền tảng di động)
+        - Java FX : phát triển các ứng dụng Internet phong phú (Rich Internet Applications – RIAs) có thể chạy trên nhiều loại thiết bị, nhiều hệ điều hành khác nhau.
+2. Đa tính năng :
+  - Hướng đối tượng(Object Oriented) - Trong Java, mọi thứ đều là một Object. Java có thể dễ dàng mở rộng và bảo trì vì nó được xây dựng dựa trên mô hình Object.
+  - Nền tảng độc lập( Platform Independent) - Không giống nhiều ngôn ngữ lập trình khác bao gồm cả C và C ++, khi Java được biên dịch, nó không được biên dịch thành
+        ngôn ngữ máy nền tảng cụ thể, thay vào mã byte - nền tảng độc lập. Mã byte này được thông dịch bởi máy ảo (JVM) trên nền tảng nào đó mà nó đang chạy.
+  - Đơn giản(Simple) - Java được thiết kế để dễ học.
+  - Bảo mật(Secured) - Với tính năng an toàn của Java, nó cho phép phát triển các hệ thống không có virut, giả mạo. Các kỹ thuật xác thực dựa trên mã hoá khóa công khai.
+  - Kiến trúc+trung lập(Architecture-neutral) - Trình biên dịch Java tạo ra định dạng tệp đối tượng kiến trúc trung lập, làm cho mã biên dịch được thực thi trên nhiều bộ vi xử lý,
+        với sự hiện diện của hệ điều hành Java.
+  - Portable(Khả chuyển) - Là kiến trúc tập trung và không có khía cạnh thực hiện phụ thuộc của đặc tả này làm cho Java khả chuyển. Trình biên dịch trong Java được viết
+        bằng ANSI C, đó là một tập con POSIX.
+  - Mạnh mẽ(Robust) - Java làm nỗ lực để loại trừ các tình huống dễ bị lỗi bằng cách kiểm tra lỗi tại thời gian biên dịch và kiểm tra lỗi tại runtime.
+  - Đa luồng(Multi-thread) - Với tính năng đa luồng của Java có thể viết các chương trình có thể thực hiện nhiều tác vụ đồng thời. Tính năng thiết kế này cho phép
+        các nhà phát triển xây dựng các ứng dụng tương tác có thể chạy trơn tru hơn.
+  - Thông dịch(Interpreted) - Mã byte Java được dịch trực tiếp tới các máy tính gốc và không được lưu trữ ở bất cứ đâu.
+  - Hiệu năng cao (High Performance) - Với việc sử dụng trình biên dịch Just-In-Time, Java cho phép thực hiện hiệu năng cao.
+  - Phân tán (Distributed) - Java được thiết kế cho môi trường phân tán của Internet.
+  - Năng động(Dynamic) - Java là năng động hơn C hoặc C++ vì nó được thiết kế để thích nghi với môi trường đang phát triển. Các chương trình Java có thể mang
+        một lượng lớn thông tin tại runtime mà có thể được sử dụng để xác minh và giải quyết các truy cập vào các đối tượng tại runtime.
+3.Có 2 cách :
+    - Tạm thời : +) Mở cmd.
+                 +) Copy đường dẫn thư mục jdk/bin.
+                 +) Gõ lệnh: path=%path%;[copied_path].
+    - Dài hạn : +) Download JDK phù hợp
+                +) MyComputer --> Properties -> Advanced system settings -> Environment Variables -> Click 'New' trong System Variables -> Thiết lập tên + [java-path]\bin
+                +) Trên Linux : command : "export PATH=$PATH:/home/jdkversion???/bin/"

@@ -1,0 +1,62 @@
+Động từ	            Ý nghĩa	            Giá trị trả về chính
+========================================================================================================================
+Get	                Lấy ra	            Object
+Set	                Đặt giá trị	        void
+Update	            Cập nhật	        void( hoặc số lượng đã update)
+Delete	            Xóa bỏ	            void( hoặc số lượng đã delete)
+Insert	            Chèn vào	        void
+Select	            Lựa chọn	        Object
+Find	            Lựa chọn	        Object
+Add	                Thêm vào	        void
+Remove	            Xóa bỏ	            Object
+Clear	            Dọn sạch	        void
+Append	            Viết thêm	        void or Object sau khi đã thêm
+Trim	            Chỉnh sửa	        Object
+Compare	            So sánh	            Kết quả so sánh(-1,0,1)
+Concat	            Nối thêm	        Object
+Split	            Phân chia	        Object
+Enumerate	        Liệt kê	            Array
+Move	            Di chuyển	        void
+Copy	            Sao chép	        void
+Create	            Tạo thành	        Object
+Make	            Tạo thành	        Object
+Generate	        Tạo thành	        Object
+New	                Tạo mới	            Object
+Build	            Xây dựng	        Object
+Flush	            Flush	            void
+Begin	            Bắt đầu	            void
+End	                Kết thúc        	void
+Initialize	        Khởi tạo        	void
+Load	            Load	            void
+Merge	            Ghép	            Object
+Read	            Đọc	                Object
+Write	            Viết	            void
+To	                Biến đổi	        Object
+Convert	            Biến đổi	        Object
+Accept	            Cho phép	        void
+Fill	            Làm đầy, điền	    void
+Apply	            Áp dụng	            void
+Show	            Hiển thị	        void
+Union	            Hợp của tập hợp	    Object
+Intersect	        Giao của tập hợp	Object
+Do	                Tiến hành	        void
+Run	                Tiến hành	        void
+Shutdown	        Tắt	                void
+Save	            Lưu lại	            void
+Cancel	            Hủy bỏ	            void
+Refresh	            Làm mới	            void
+Execute	            Tiến hành	        bool(Thành công hay thất bại)
+Resolve	            Giải quyết	        Object
+Invoke	            Gọi ra	            Object
+Handle	            Xử lý	            Object
+Raise	            Gọi ra	            void
+Is	                Có phải là ... không ?	    bool
+Contains	        Có chứa ... không ?	        bool
+Exists	            Có tồn tại không ?	        bool
+Verify	            Xác nhận / Đánh giá	        bool(nếu để là void không được thì trả về ngoại lệ cũng tốt)
+Validate	        Kiểm chứng	                bool
+Try	                Thử	                        bool(nếu để là void không được thì trả về ngoại lệ cũng tốt)
+Has	                Có ... không	            bool
+Equals	            So sánh	                    bool
+Can	                Có thể không	            bool
+========================================================================================================================

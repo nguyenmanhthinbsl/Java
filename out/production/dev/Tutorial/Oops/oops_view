@@ -1,0 +1,101 @@
+1. Khái niệm
+2. Tính chất
+3. Class , Object
+4. Package
+5. Constructor
+6. "this"
+7. "super"
+8. "final"
+9. "static"
+10. Access Modifier
+11. 
+12.
+13.
+14.
+15.
+========================================================================================================================================================================
+1. Khái niệm : là một phương pháp hay mô hình giúp tăng năng suất, đơn giản hóa việc bảo trì, dễ dàng mở rộng trong thiết kế phần mềm
+2. Lập trình hướng đối tượng có 4 tính chất :
+    - Kế thừa (Inheritance)
+    - Đa hình (Polymorphism)
+    - Trừu tượng (Abstraction)
+    - Đóng gói (Encapsulation)
+3. Class : là 1 tập hợp các đối tượng được
+   Objects : Tất cả những thực thể có trạng thái và hành vi được biết đến như là một đối tượng.
+4. Package :
+    - Khái niệm : package (gói) trong java là một nhóm các kiểu tương tự của các lớp, giao diện và các package con .
+    - Phân loại :
+        +   package được dựng sẵn
+        +   package do người dùng định nghĩa.
+    - Lợi ích :
+            + Package được sử dụng để phân loại lớp và interface giúp dễ dàng bảo trì.
+            + Package cung cấp bảo vệ truy cập
+            + Package khắc phục được việc đặt trùng tên
+    - Truy cập :
+          + Khai báo import package.*;
+          + Khai báo import package.classname;
+          + Sử dụng tên đầy đủ.
+    - SubPackage( package con)
+5. Constructor
+    -Constructor trong java là một dạng đặc biệt của phương thức được sử dụng để khởi tạo các đối tượng.
+        Java Constructor được gọi tại thời điểm tạo đối tượng. Nó khởi tạo các giá trị để cung cấp dữ liệu cho các đối tượng,
+        đó là lý do tại sao nó được gọi là constructor.
+    - Có 2 kiểu của constructor
+        +) Constructor mặc định (không có tham số truyền vào)
+        +) Constructor tham số
+    - Quy tắc: Nếu không có constructor trong một lớp, trình biên dịch sẽ tự động tạo một constructor mặc định trong lớp đó.
+    - Constructor Overloading là một kỹ thuật trong Java. Bạn có thể tạo nhiều constructor trong cùng một lớp với danh sách tham
+        số truyền vào khác nhau. Trình biên dịch phân biệt các constructor này thông qua số lượng và kiểu của các tham số truyền vào.
+6. "this"
+    - Từ khóa this có thể được dùng để tham chiếu tới biến instance của lớp hiện tại.
+    - this() có thể được dùng để gọi Constructor của lớp hiện tại.
+    - Từ khóa this có thể được dùng để gọi phương thức của lớp hiện tại.
+    - Từ khóa this có thể được truyền như một tham số trong phương thức.
+    - Từ khóa this có thể được truyền như một tham số trong phương Constructor.
+    - Từ khóa this có thể được dùng để trả về instance của lớp hiện tại.
+7. "super"
+    - Từ khóa super trong java là một biến tham chiếu được sử dụng để tham chiếu trực tiếp đến đối tượng của lớp cha gần nhất.
+    - Bất cứ khi nào bạn tạo ra instance(thể hiển) của lớp con, một instance của lớp cha được tạo ra ngầm định, nghĩa là được tham chiếu bởi biến super.
+    - Trong java, từ khóa super có 3 cách sử dụng như sau:
+        +) Từ khóa super được sử dụng để tham chiếu trực tiếp đến biến instance của lớp cha gần nhất.
+        +) super() được sử dụng để gọi trực tiếp Constructor của lớp cha.
+        +) Từ khóa super được sử dụng để gọi trực tiếp phương thức của lớp cha.
+8. "final"
+    - Từ khóa final trong Java được sử dụng để hạn chế người dùng. Từ khóa final có thể được sử dụng trong nhiều ngữ cảnh:
+    +) Biến final: bạn không thể thay đổi giá trị của biến final (nó sẽ là hằng số).
+    +) Phương thức final: bạn không thể ghi đè phương thức final.
+    +) Lớp final: bạn không thể kế thừa lớp final.
+    +) Biến static final trống: Một biến final mà không được khởi tạo tại thời điểm khai báo được gọi là biến final trống.
+    - Từ khóa final có thể được áp dụng với các biến, một biến final mà không có giá trị nào được gọi là biến final trống hoặc biến final không được khởi tạo.
+        Nó chỉ có thể được khởi tạo trong Constructor. Biến final trống cũng có thể là static mà sẽ chỉ được khởi tạo trong khối static.
+9. "static"
+    - Từ khóa static trong Java được sử dụng chính để quản lý bộ nhớ. Chúng ta có thể áp dụng từ khóa static với các biến, các phương thức, các khối,
+        các lớp lồng nhau(nested class). Từ khóa static thuộc về lớp chứ không thuộc về instance(thể hiện) của lớp.
+    - Trong java, Static có thể là:
+        +) Biến static: Khi bạn khai báo một biến là static, thì biến đó được gọi là biến tĩnh, hay biến static.
+        +) Phương thức static: Khi bạn khai báo một phương thức là static, thì phương thức đó gọi là phương thức static.
+        +) Khối static: Được sử dụng để khởi tạo thành viên dữ liệu static.
+    - Lợi thế của biến static
+        +) Sử dụng biến static giúp chương trình của bạn sử dụng bộ nhớ hiệu quả hơn (tiết kiệm bộ nhớ).
+    - Phương thức static trong Java
+    - Nếu bạn áp dụng từ khóa static với bất cứ phương thức nào, thì phương thức đó được gọi là phương thức static.
+        +) Một phương thức static thuộc lớp chứ không phải đối tượng của lớp.
+        +) Một phương thức static gọi mà không cần tạo một instance của một lớp.
+        +) Phương thức static có thể truy cập biến static và có thể thay đổi giá trị của nó
+    - Sự hạn chế của phương thức static
+          +) Phương thức static không thể sử dụng biến non-static hoặc gọi trực tiếp phương thức non-static.
+          +) Từ khóa this và super không thể được sử dụng trong ngữ cảnh static.
+    - Khối static
+        +) Được sử dụng để khởi tạo thành viên dữ liệu static.
+        +) Nó được thực thi trước phương thức main tại lúc tải lớp.
+10. Access Modifier
+    - Có 2 loại Access modifier :
+        +) Access modifier
+        +) Non access modifier
+    - có 4 phạm vi truy cập của Access Modifier như sau:
+          +) private : Nếu bạn tạo bất kỳ constructor là private trong lớp, bạn sẽ không thể tạo instance của class bên ngoài
+          +) default : Default Access Modifier là chỉ được phép truy cập trong cùng package.
+          +) protected : được truy cập bên trong package và bên ngoài package nhưng phải kế thừa.
+                         Protected access modifier có thể được áp dụng cho biến, phương thức, constructor. Nó không thể áp dụng cho lớp.
+          +) public : Public access modifier được truy cập ở mọi nơi.
+11. Abstract class
