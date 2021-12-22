@@ -14,7 +14,7 @@ _[Project](https://github.com/nguyenmanhthinbsl/JavaLearning)_ _created by_ _[yh
       2. JDK_JRE_JVM[^2]
       3. Variable[^3]
       4. example[^4]
-      [^1]: ```
+      [^1]:```
       1.Khái niệm
       2.Tính năng
       3.Thiết lập môi trường```
