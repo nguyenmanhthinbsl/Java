@@ -3,6 +3,6 @@ _[Project](https://github.com/nguyenmanhthinbsl/JavaLearning)_ _created by_ _[yh
 
 #Trong repo này gồm có - this repo include: </br>
     1.[Java core](./../../tree/main/out/production/dev/Tutorial) </br>
-    2.java form - swing </br>
-    3.java web - jsp/Servlet -> spring framework </br>
-    4.database - hibernate, jpa </br>
+    2.[java form- swing](./../../tree/main/out/production/dev/Swing)</br>
+    3.[spring framework]((./../../tree/main/out/production/dev/Spring-framework.module)</br>
+    4.[database - hibernate/jpa: chua hoan thanh] </br>
