@@ -1,0 +1,8 @@
+20 modules :
+    - Core container
+    - Data Integration
+    - WEB
+    - AOB
+    - Instrumetation
+    - Messaging
+    - TEST

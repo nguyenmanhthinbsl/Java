@@ -5,7 +5,7 @@
     <file url="file://$PROJECT_DIR$/Java/src/Tutorial/Core/JDK_JRE_JVM" />
     <file url="file://$PROJECT_DIR$/Java/src/Tutorial/Oops/oops_view" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
