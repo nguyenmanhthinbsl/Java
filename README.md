@@ -11,7 +11,7 @@ _[Project](https://github.com/nguyenmanhthinbsl/JavaLearning)_ _created by_ _[yh
 1. [Java core](./../../tree/main/out/production/dev/Tutorial) </br>
     [Core](./../../tree/main/out/production/dev/Tutorial/Core)</br>
       1. core_overview</br>
-        ```
+      ```
       ***Khái niệm***:
       Java là một một ngôn ngữ lập trình hiện đại, bậc cao, hướng đối tượng, bảo mật và mạnh mẽ. 
       và là một Platform(môi trường runtime riêng cho mình (JRE) và API)
